@@ -1,7 +1,16 @@
 import express from "express";
+import bodyParser from "body-parser";
+import morgan from "morgan";
 
 const app = express();
 const port = 3000;
+
+function logger (req, res, next) {
+  console.log("Request methode", req.method);
+  console.log("Request URL", req.url);
+  next();
+}
+
 
 app.use(logger);
 
