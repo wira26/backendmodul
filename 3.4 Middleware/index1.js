@@ -1,6 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
-import { dirname } from "path";
+import { basename, dirname } from "path";
 import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/submit", (req, res) => {
-  console.log(req.body)
+  res.send(`<h1> Your band name is <h2> ${bas}</h2></h1>`)
 })
 
 app.listen(port, () => {
