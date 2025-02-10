@@ -7,7 +7,7 @@ const port = 3000;
 const API_URL = "https://secrets-api.appbrewery.com";
 
 //Add your own bearer token from the previous lesson.
-const yourBearerToken = "d46a25f3-2f99-4a4a-aa7d-bea273772b51";
+const yourBearerToken = "6a704dc9-1e3e-4417-a098-0d8217d31c63";
 const config = {
   headers: { Authorization: `Bearer ${yourBearerToken}` },
 };
